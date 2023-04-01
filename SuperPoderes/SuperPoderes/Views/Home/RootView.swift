@@ -9,12 +9,12 @@ import SwiftUI
 
 struct RootView: View {
     
-    @EnvironmentObject var viewmodel: viewModelHeros
+    @EnvironmentObject var viewmodel: ViewModelHeros
     
     var body: some View {
         switch viewmodel.status {
         case .none:
-            Text("none status")
+            EmptyView()
         case .loading:
             LoaderView()
         case .loaded:
@@ -28,6 +28,6 @@ struct RootView: View {
 struct RootView_Previews: PreviewProvider {
     static var previews: some View {
         RootView()
-            .environmentObject(viewModelHeros())
+            .environmentObject(ViewModelHeros())
     }
 }

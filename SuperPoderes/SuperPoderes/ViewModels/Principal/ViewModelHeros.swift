@@ -8,16 +8,16 @@
 import Foundation
 import Combine
 
-final class viewModelHeros: ObservableObject {
+final class ViewModelHeros: ObservableObject {
     @Published var heros: [Heros]?
     @Published var status = Status.none
     
     var suscriptors = Set<AnyCancellable>()
     
     init(testing: Bool = false) {
-        if (testing){
+        if (testing) {
             getHerosTesting()
-        } else{
+        } else {
             getHeros(sortBy: .formerModified)
         }
     }
@@ -27,7 +27,7 @@ final class viewModelHeros: ObservableObject {
         
         URLSession.shared
             .dataTaskPublisher(for: BaseNetwork().getSessionHeros(sortBy: .formerModified))
-            .tryMap{
+            .tryMap {
                 guard let response = $0.response as? HTTPURLResponse,
                       response.statusCode == 200 else {
                     throw URLError(.badServerResponse)
@@ -36,10 +36,10 @@ final class viewModelHeros: ObservableObject {
                 //TODO OK
                 return $0.data
             }
-            .decode(type: Welcome.self, decoder: JSONDecoder())
+            .decode(type: Response.self, decoder: JSONDecoder())
             .receive(on: DispatchQueue.main)
             .sink { completion in
-                switch completion{
+                switch completion {
                 case .failure:
                     self.status = Status.error(error: "Error buscando heroes")
                 case .finished:

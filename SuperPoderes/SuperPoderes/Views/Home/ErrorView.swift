@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ErrorView: View {
-    @EnvironmentObject var viemModel: viewModelHeros
+    @EnvironmentObject var viemModel: ViewModelHeros
     
     private var textError:String
     
@@ -17,7 +17,7 @@ struct ErrorView: View {
     }
     
     var body: some View {
-        VStack{
+        VStack {
             Spacer()
             
             Image(systemName: "exclamationmark.triangle.fill")
@@ -25,7 +25,7 @@ struct ErrorView: View {
                 .foregroundColor(.red)
                 .frame(width: 200, height: 200)
                 .padding()
-                .offset(x:20) //ajuste maximo.
+                .offset(x: 20) //ajuste maximo.
                 .id(0)
             
             Text("\(textError)")
@@ -35,7 +35,7 @@ struct ErrorView: View {
             
             Spacer()
             
-            Button("Volver") {
+            Button(NSLocalizedString("back", comment: "")) {
                 self.viemModel.status = .none
             }
             .frame(width: 300, height: 50)
@@ -52,7 +52,7 @@ struct ErrorView: View {
 struct ErrorView_Previews: PreviewProvider {
     static var previews: some View {
         ErrorView(error: "Error de prueba")
-            .environmentObject(viewModelHeros())
+            .environmentObject(ViewModelHeros())
     }
 }
 

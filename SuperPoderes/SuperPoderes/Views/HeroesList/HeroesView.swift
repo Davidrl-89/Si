@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HeroesView: View {
-    @StateObject var viewModel: viewModelHeros
+    @StateObject var viewModel: ViewModelHeros
    
     var body: some View {
         
@@ -19,7 +19,7 @@ struct HeroesView: View {
                     ForEach(heros) { hero in
                         NavigationLink {
                             //Detalle view
-                            HeroesSeriesView(heroSerieViewModel: viewModelSeries(hero: hero), hero: hero)
+                            HeroesSeriesView(heroSerieViewModel: ViewModelSeries(hero: hero), hero: hero)
                         } label: {
                             HeroesRowView(hero: hero)
                         }
@@ -27,14 +27,14 @@ struct HeroesView: View {
                 }
             }
             .id(0)
-            .navigationTitle("Marvel")
+            .navigationTitle(NSLocalizedString("title", comment: ""))
 
         }
     }
     
     struct HeroesView_Previews: PreviewProvider {
         static var previews: some View {
-            HeroesView(viewModel: viewModelHeros(testing: false))
+            HeroesView(viewModel: ViewModelHeros(testing: false))
         }
     }
 }

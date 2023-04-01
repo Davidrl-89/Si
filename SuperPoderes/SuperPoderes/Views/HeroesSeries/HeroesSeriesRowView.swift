@@ -46,7 +46,7 @@ struct HeroesSeriesRowView: View {
                     .id(2)
                 
             } else {
-                Text("No description")
+                Text(NSLocalizedString("without_description", comment: ""))
                     .font(.callout)
                     .foregroundColor(.black)
                     .padding()
@@ -56,7 +56,7 @@ struct HeroesSeriesRowView: View {
     
     struct HeroesSeriesRowView_Previews: PreviewProvider {
         static var previews: some View {
-            HeroesSeriesRowView(serie: Serie(id: 1, title: "Serie Test 1", description: "", resourceURI: "", urls: [], startYear: 1, endYear: 2, rating: "", type: "", modified: "", thumbnail: Thumbnail(path: "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/4ce59d3a80ff7", thumbnailExtension: .jpg), creators: Creators(available: 1, collectionURI: "", items: [], returned: 2), characters: Characters(available: 2, collectionURI: "!", items: [], returned: 3), stories: Stories(available: 7, collectionURI: "", items: [], returned: 5), comics: Characters(available: 5, collectionURI: "", items: [], returned: 5), events: Characters(available: 3, collectionURI: "", items: [], returned: 8)))
+            HeroesSeriesRowView(serie: Serie(id: 1, title: "test", description: "", thumbnail: Thumbnail(path: "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/4ce59d3a80ff7", thumbnailExtension: .jpg)))
         }
     }
 }

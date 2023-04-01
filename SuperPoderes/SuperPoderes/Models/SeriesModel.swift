@@ -32,16 +32,16 @@ struct Serie: Codable, Identifiable {
     let id: Int
     let title: String
     let description: String?
-    let resourceURI: String
-    let urls: [URLElement]
-    let startYear, endYear: Int
-    let rating, type: String
-    let modified: String
+//    let resourceURI: String
+//    let urls: [URLElement]
+//    let startYear, endYear: Int
+//    let rating, type: String
+//    let modified: String
     let thumbnail: Thumbnail
-    let creators: Creators
-    let characters: Characters
-    let stories: Stories
-    let comics, events: Characters
+//    let creators: Creators
+//    let characters: Characters
+//    let stories: Stories
+//    let comics, events: Characters
 //    let next, previous: JSONNull?
 }
 

@@ -10,7 +10,7 @@ import SwiftUI
 struct LoaderView: View {
     var body: some View {
         ProgressView(label: {
-            Text("Loading...")
+            Text(NSLocalizedString("loading", comment: ""))
                 .id(0)
         })
     }

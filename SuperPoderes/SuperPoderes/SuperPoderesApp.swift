@@ -9,11 +9,10 @@ import SwiftUI
 
 @main
 struct SuperPoderesApp: App {
-    @StateObject var viewModel = viewModelHeros()
+    @StateObject var viewModel = ViewModelHeros()
     
     var body: some Scene {
         WindowGroup {
-            
             RootView()
                 .environmentObject(viewModel)
         }

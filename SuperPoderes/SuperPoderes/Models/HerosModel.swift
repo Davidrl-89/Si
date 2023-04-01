@@ -7,8 +7,8 @@
 
 import Foundation
 
-// MARK: - Welcome
-struct Welcome: Codable {
+// MARK: - Response
+struct Response: Codable {
     let code: Int
     let status: String
     let copyright: String

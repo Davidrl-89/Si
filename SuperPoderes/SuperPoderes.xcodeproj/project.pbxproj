@@ -22,11 +22,13 @@
 		BB07C70029D889450066FDEF /* HeroesSeriesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07C6F929D889220066FDEF /* HeroesSeriesRowView.swift */; };
 		BB07C70129D889490066FDEF /* HeroesSeriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07C6FA29D889220066FDEF /* HeroesSeriesView.swift */; };
 		BB07C70429D889870066FDEF /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07C70329D889780066FDEF /* BaseNetwork.swift */; };
-		BB07C70929D889A40066FDEF /* viewModelHeros.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07C70729D8899E0066FDEF /* viewModelHeros.swift */; };
-		BB07C70A29D889A70066FDEF /* viewModelSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07C70829D8899E0066FDEF /* viewModelSeries.swift */; };
+		BB07C70929D889A40066FDEF /* ViewModelHeros.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07C70729D8899E0066FDEF /* ViewModelHeros.swift */; };
+		BB07C70A29D889A70066FDEF /* ViewModelSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07C70829D8899E0066FDEF /* ViewModelSeries.swift */; };
 		BB07C70F29D889BE0066FDEF /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07C70C29D889B90066FDEF /* Status.swift */; };
 		BB07C71029D889C10066FDEF /* HerosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07C70D29D889B90066FDEF /* HerosModel.swift */; };
 		BB07C71129D889C40066FDEF /* SeriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07C70E29D889B90066FDEF /* SeriesModel.swift */; };
+		BBD6679429D88D56005AB08B /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = BBD6679329D88D56005AB08B /* ViewInspector */; };
+		BBD667B029D891CD005AB08B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBD667B229D891CD005AB08B /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,12 +67,14 @@
 		BB07C6F929D889220066FDEF /* HeroesSeriesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesSeriesRowView.swift; sourceTree = "<group>"; };
 		BB07C6FA29D889220066FDEF /* HeroesSeriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesSeriesView.swift; sourceTree = "<group>"; };
 		BB07C70329D889780066FDEF /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
-		BB07C70729D8899E0066FDEF /* viewModelHeros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModelHeros.swift; sourceTree = "<group>"; };
-		BB07C70829D8899E0066FDEF /* viewModelSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModelSeries.swift; sourceTree = "<group>"; };
+		BB07C70729D8899E0066FDEF /* ViewModelHeros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelHeros.swift; sourceTree = "<group>"; };
+		BB07C70829D8899E0066FDEF /* ViewModelSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelSeries.swift; sourceTree = "<group>"; };
 		BB07C70C29D889B90066FDEF /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		BB07C70D29D889B90066FDEF /* HerosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosModel.swift; sourceTree = "<group>"; };
 		BB07C70E29D889B90066FDEF /* SeriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesModel.swift; sourceTree = "<group>"; };
 		BB07C71229D88A500066FDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BBD667B129D891CD005AB08B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BBD667B329D891D1005AB08B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBD6679429D88D56005AB08B /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +110,7 @@
 				BB07C6CB29D888B50066FDEF /* SuperPoderesTests */,
 				BB07C6D529D888B50066FDEF /* SuperPoderesUITests */,
 				BB07C6B929D888B40066FDEF /* Products */,
+				BBD6678D29D88CBF005AB08B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +136,7 @@
 				BB07C6BD29D888B40066FDEF /* ContentView.swift */,
 				BB07C6BF29D888B50066FDEF /* Assets.xcassets */,
 				BB07C6C129D888B50066FDEF /* Preview Content */,
+				BBD667B229D891CD005AB08B /* Localizable.strings */,
 			);
 			path = SuperPoderes;
 			sourceTree = "<group>";
@@ -216,8 +223,8 @@
 		BB07C70629D8899E0066FDEF /* Principal */ = {
 			isa = PBXGroup;
 			children = (
-				BB07C70729D8899E0066FDEF /* viewModelHeros.swift */,
-				BB07C70829D8899E0066FDEF /* viewModelSeries.swift */,
+				BB07C70729D8899E0066FDEF /* ViewModelHeros.swift */,
+				BB07C70829D8899E0066FDEF /* ViewModelSeries.swift */,
 			);
 			path = Principal;
 			sourceTree = "<group>";
@@ -230,6 +237,13 @@
 				BB07C70E29D889B90066FDEF /* SeriesModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BBD6678D29D88CBF005AB08B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +262,8 @@
 			dependencies = (
 			);
 			name = SuperPoderes;
+			packageProductDependencies = (
+			);
 			productName = SuperPoderes;
 			productReference = BB07C6B829D888B40066FDEF /* SuperPoderes.app */;
 			productType = "com.apple.product-type.application";
@@ -266,6 +282,9 @@
 				BB07C6CA29D888B50066FDEF /* PBXTargetDependency */,
 			);
 			name = SuperPoderesTests;
+			packageProductDependencies = (
+				BBD6679329D88D56005AB08B /* ViewInspector */,
+			);
 			productName = SuperPoderesTests;
 			productReference = BB07C6C829D888B50066FDEF /* SuperPoderesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -284,6 +303,8 @@
 				BB07C6D429D888B50066FDEF /* PBXTargetDependency */,
 			);
 			name = SuperPoderesUITests;
+			packageProductDependencies = (
+			);
 			productName = SuperPoderesUITests;
 			productReference = BB07C6D229D888B50066FDEF /* SuperPoderesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -318,8 +339,12 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = BB07C6AF29D888B40066FDEF;
+			packageReferences = (
+				BBD6679229D88D56005AB08B /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = BB07C6B929D888B40066FDEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB07C6C329D888B50066FDEF /* Preview Assets.xcassets in Resources */,
+				BBD667B029D891CD005AB08B /* Localizable.strings in Resources */,
 				BB07C6C029D888B50066FDEF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,8 +395,8 @@
 				BB07C6BE29D888B40066FDEF /* ContentView.swift in Sources */,
 				BB07C6FF29D889400066FDEF /* HeroesRowView.swift in Sources */,
 				BB07C6FC29D889300066FDEF /* LoaderView.swift in Sources */,
-				BB07C70A29D889A70066FDEF /* viewModelSeries.swift in Sources */,
-				BB07C70929D889A40066FDEF /* viewModelHeros.swift in Sources */,
+				BB07C70A29D889A70066FDEF /* ViewModelSeries.swift in Sources */,
+				BB07C70929D889A40066FDEF /* ViewModelHeros.swift in Sources */,
 				BB07C71129D889C40066FDEF /* SeriesModel.swift in Sources */,
 				BB07C70F29D889BE0066FDEF /* Status.swift in Sources */,
 				BB07C6BC29D888B40066FDEF /* SuperPoderesApp.swift in Sources */,
@@ -411,6 +437,18 @@
 			targetProxy = BB07C6D329D888B50066FDEF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BBD667B229D891CD005AB08B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBD667B129D891CD005AB08B /* en */,
+				BBD667B329D891D1005AB08B /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BB07C6DA29D888B50066FDEF /* Debug */ = {
@@ -697,6 +735,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BBD6679229D88D56005AB08B /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				branch = 0.9.6;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BBD6679329D88D56005AB08B /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBD6679229D88D56005AB08B /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BB07C6B029D888B40066FDEF /* Project object */;
 }

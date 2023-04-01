@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  SuperPoderes
+
+  Created by David Robles Lopez on 1/4/23.
+  
+*/
+
+"title" = "Marvel";
+"loading" = "Loading...";
+"back" = "Back";
+"without_description" = "No description";
